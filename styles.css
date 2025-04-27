@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/flags/8010.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.main-heading {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+}
+
+.flag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.flag-item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.flag-item:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.flag-item img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.flag-item span {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+}
