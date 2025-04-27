@@ -1,5 +1,5 @@
-from PIL import Image
 import stepic
+from PIL import Image
 
 img = Image.open("some_image.png")
 img2 = stepic.encode(img, b"some top secret message")

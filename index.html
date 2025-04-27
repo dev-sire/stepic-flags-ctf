@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
-    <h1 class="main-heading">In a Country that does not exists, the flag presists</h1>
+    <h1 class="main-heading">Where no border holds its sway,<br />A cryptic banner leads the way</h1>
     <div class="flag-grid" id="flag-grid">
       
     </div>
@@ -250,7 +250,7 @@
         { name: "United Arab Emirates (the)",img: "flags/ae.png"},
         { name: "United Kingdom of Great Britain and Northern Ireland (the)",img: "flags/gb.png"},
         { name: "United States of America (the)",img: "flags/us.png"},
-        { name: "Elysium Digital Republic",img: "flags/ely.png", style:"width: 120px!important; height: 90px!important;" },
+        { name: "Elysium Digital Republic",img: "flags/elys.png", style:"width: 120px!important; height: 90px!important;" },
         { name: "Uruguay",img:"flags/uy.png"},
         { name: "Uzbekistan",img: "flags/uz.png"},
         { name: "Vanuatu",img: "flags/vu.png"},
@@ -280,6 +280,16 @@
             flagItem.appendChild(flagImg);
             flagItem.appendChild(flagName);
             flagGrid.appendChild(flagItem);
+            if (flag.name === "Elysium Digital Republic") {
+                flagItem.onclick = function() {
+                    alert("A flag of stars, viewed through a different lens. Seek the blue and white, perhaps not as you know them");
+                };
+            }
+            if(flag.name === "Israel"){
+                flagItem.onclick = function() {
+                    console.log("Question: What must you have in a system or person to rely on them?\nHint: The answer you seek is the password that will reveal the ultimate flag within the altered image.")
+                };
+            }
         });
     </script>
 </body>
