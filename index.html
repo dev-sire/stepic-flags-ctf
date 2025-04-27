@@ -7,6 +7,7 @@
     <title>Hackemon CTF: Ciphered Flags</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta property="og:image" content="https://ciphered-flags.netlify.app/open-graph.png" />
 </head>
 <body>
     <h1 class="main-heading">Where no border holds its sway,<br />A cryptic banner leads the way</h1>
@@ -283,11 +284,6 @@
             if (flag.name === "Elysium Digital Republic") {
                 flagItem.onclick = function() {
                     alert("A flag of stars, viewed through a different lens. Seek the blue and white, perhaps not as you know them");
-                };
-            }
-            if(flag.name === "Israel"){
-                flagItem.onclick = function() {
-                    console.log("Question: What must you have in a system or person to rely on them?\nHint: The answer you seek is the password that will reveal the ultimate flag within the altered image.")
                 };
             }
         });
